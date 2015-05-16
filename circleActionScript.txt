@@ -38,8 +38,12 @@ lBlue.color = 0x
 circle.transform.colorTransform = white;
 
 //Circle Initial Definitions 
-formalDef.text = ("A perfectly round shape : a line that is curved so that its ends meet and every point on the line is the same distance from the center");
-simpleDef.text = ("A perfectly round line where every point on the line is the same distance from the center");
+var formalDef.text = ("A perfectly round shape : a line \n"
+					+ "that is curved so that its ends \n"
+					+ "meet and every point on the line \n"
+					+ "is the same distance from the center \n");
+var simpleDef.text = ("A perfectly round line where every point\n"
+					  "on the line is the same distance from the center\n");
 
 function radiusHandler(event:MouseEvent):void{
 	defTitle = ("radius");
@@ -47,12 +51,15 @@ function radiusHandler(event:MouseEvent):void{
 	formalTitle.text = (defTitle);
 	
 	//Assign the formal defintion to this variable.
-	formalDef.text = ("A line segment extending from the center of a circle or sphere to the circumference or bounding surface");
+	formalDef.text = ("A line segment extending from the center \n"
+					+ "of a circle or sphere to the circumference \n"
+					+ "or bounding surface \n");
 	
 	simpleTitle.text = (defTitle);
 	
 	//Assign the simple definition to this variable.
-	simpleDef.text = ("The distance from the center of the circle to the outside of the circle");
+	simpleDef.text = ("The distance from the center of the \n"
+					+ "circle to the outside of the circle\n");
 	
 }
 
@@ -60,9 +67,12 @@ function diameterHandler(event:MouseEvent):void{
 	defTitle = ("diameter");
 	
 	formalTitle.text = (defTitle);
-	formalDef.text = ("A straight line from one side of something (such as a circle) to the other side that passes through the center point);
+	formalDef.text = ("A straight line from one side of something \n"
+					+ "(such as a circle) to the other side that \n"
+					+ " passes through the center point \n");
 	simpleTitle.text = (defTitle);
-	simpleDef.text = ("The length of a straight line through the center of an object");
+	simpleDef.text = ("The length of a straight line \n"
+					+ " through the center of an object\n");
 	
 }
 
@@ -70,27 +80,32 @@ function circumferenceHandler(event:MouseEvent):void{
 	defTitle = "circumference";
 	
 	formalTitle.text = (defTitle);
-	formalDef.text = ("The length of the outer edge of the circle");
+	formalDef.text = ("The length of the outer edge of the circle\n"
+					+ "This is the same as perimeter of other shapes\n");
 	simpleTitle.text = (defTitle);
-	simpleDef.text = ("The length of the outside of your circle");
+	simpleDef.text = ("The length of the outside of the circle\n");
 }
 
 function areaHandler(event:MouseEvent):void{
 	defTitle = "area";
 	
 	formalTitle.text = (defTitle);
-	formalDef.text = ( "The surface included within a set of lines; specifically:  the number of unit squares equal in measure to the surface");
+	formalDef.text = ("The surface included within a set of lines;\n"
+					+ "specifically:  the number of unit squares\n"
+					+ "equal in measure to the surface\n");
 	simpleTitle.text = (defTitle);
-	simpleDef.text = ( "The space within your circle");
+	simpleDef.text = ( "The space within your circle\n");
 }
 
 function volumeHandler(event:MouseEvent):void{
 	defTitle = "volume";
 	
 	formalTitle.text = (defTitle);
-	formalDef.text = ("The amount of space occupied by a three-dimensional object as measured in cubic units ");
+	formalDef.text = ("The amount of space occupied by a\n"
+					+ "three-dimensional object as measured \n"
+					+ "in cubic units \n");
 	simpleTitle.text = (defTitle);
-	simpleDef.text = ("The amount of space that the sphere takes up");
+	simpleDef.text = ("The amount of space that the sphere takes up\n");
 }
 
 
